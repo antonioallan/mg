@@ -1,0 +1,35 @@
+<div class="panel panel-danger" style="width: 400px;margin: 50px auto;">
+    <div class="panel-heading">
+        <h3 class="panel-title text-center"><span class="glyphicon glyphicon-user"></span> Login</h3>
+    </div>
+    <form class="form enterapi" id="captcha-form" role="form" method="POST" action="<?php echo $this->link("/security/login"); ?>">
+        <div class="panel-body">
+            <div class="form-group">
+                <label class="control-label" for="login">CNPJ</label>
+                <input class="form-control cnpj_mask" placeholder="Entre com o seu CNPJ" type="text" name="_username" autofocus required="true"/>
+            </div>
+            <div class="form-group">
+                <label class="control-label" for="senha">Senha</label>
+                <input class="form-control" type="password" name="_password" placeholder="Entre com a sua senha." required="true"/>
+                <input type="hidden" id="_controle" name="_controle" value="<?php echo ($this->view->controle == "") ? '' : '/' . $this->view->controle; ?>"/>
+                    <input type="hidden" id="_acao" name="_acao" value="<?php echo ($this->view->acao == "") ? '' : '/' . $this->view->acao; ?>"/>
+                    <input type="hidden" id="_parametro" name="_parametro" value="<?php echo ($this->view->parametro == "") ? '' : '/' . $this->view->parametro; ?>"/>
+            </div>
+            <div class="form-group">
+                <label class="control-label" for="captcha">Entre com as letras</label>
+                <div id="captcha-wrap" class="row">
+                    <div class="col-sm-2">
+                        <button class="glyphicon glyphicon-refresh btn btn-default form-control" style="cursor: pointer;" type="button" onclick="atualizaCapcha();"></button>
+                    </div>
+                    <div class="col-sm-6">
+                        <canvas id="txt" width="100" height="30"></canvas>
+                    </div>
+                </div>
+                <input class="form-control" name="captcha" type="text" placeholder="Código de verificação" autocomplete="off">
+            </div>
+        </div>
+        <div class="panel-footer">
+            <button class="btn btn-default form-control" type="button" onclick="logarUsuario('captcha-form');"><span class="glyphicon glyphicon-ok"> Entrar</span></button>
+        </div>
+    </form>
+</div>

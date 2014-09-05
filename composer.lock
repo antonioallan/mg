@@ -1,0 +1,70 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "This file is @generated automatically"
+    ],
+    "hash": "fc25b941b689e022c18cd39687e3fef1",
+    "packages": [
+        {
+            "name": "jaspion",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/gilmario-kpslow/jaspion.git",
+                "reference": "4e925d379bb52b9dfc5df0e813dbfbbdb40519ae"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/gilmario-kpslow/jaspion/zipball/4e925d379bb52b9dfc5df0e813dbfbbdb40519ae",
+                "reference": "4e925d379bb52b9dfc5df0e813dbfbbdb40519ae",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "jaspion\\": "/"
+                }
+            },
+            "authors": [
+                {
+                    "name": "José Gilmário da Costa Batista",
+                    "email": "gilmariosoftware@gmail.com"
+                },
+                {
+                    "name": "Antonio Allan",
+                    "email": "antonioallansantos@gmail.com"
+                }
+            ],
+            "description": "Uma Framework leve em PHP",
+            "keywords": [
+                "framework"
+            ],
+            "support": {
+                "source": "https://github.com/gilmario-kpslow/jaspion/tree/master",
+                "issues": "https://github.com/gilmario-kpslow/jaspion/issues"
+            },
+            "time": "2014-09-02 17:39:00"
+        }
+    ],
+    "packages-dev": [
+
+    ],
+    "aliases": [
+
+    ],
+    "minimum-stability": "alpha",
+    "stability-flags": {
+        "jaspion": 20
+    },
+    "prefer-stable": false,
+    "platform": [
+
+    ],
+    "platform-dev": [
+
+    ]
+}

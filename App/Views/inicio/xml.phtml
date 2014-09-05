@@ -1,0 +1,4 @@
+<?php
+header('Content-Type: text/xml; charset=UTF-8');
+$url = file_get_contents("http://www.contabeis.com.br/rss/noticias/");
+echo utf8_encode($url);

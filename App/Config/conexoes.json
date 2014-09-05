@@ -1,0 +1,10 @@
+{
+    "conexoes": [{
+            "identificador": "Firebird",
+            "driver": "firebird",
+            "host": "localhost",
+            "dbname": "localhost:DBDSI.GDB",
+            "username": "SYSDBA",
+            "password": "masterkey"
+        }]
+}

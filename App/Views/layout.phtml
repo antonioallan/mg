@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Sistema Emissor de Notas Fiscal de Serviço Simplificada">
+        <meta name="author" content="SEFIN - Caucaia">
+        <link rel="shortcut icon" href="<?= $this->img('brazao2.png'); ?>">
+        <title>NFS-eS</title>
+        <?= $this->css('padrao') . "\r\n"; ?>
+        <?= $this->css('bootstrap') . "\r\n"; ?>
+        <?= $this->js('jquery-1.10.2.min') . "\r\n"; ?>
+        <?= $this->js('sessao') . "\r\n"; ?>
+        <?= $this->js('jquery.maskMoney') . "\r\n"; ?>
+        <?= $this->js('bootstrap.min') . "\r\n"; ?>
+        <?= $this->js('maskedinput') . "\r\n"; ?>
+        <?= $this->js('testeMask') . "\r\n"; ?>
+        <?= $this->js('functions') . "\r\n"; ?>
+        <?php $this->scripts(); ?>
+    </head>
+    <body>
+
+        <?php include '../App/Views/header.phtml'; ?>
+        <?php include '../App/Views/menu.phtml'; ?>
+        <div class="container">
+            <div class='alerta'>
+                <?php echo $this->view->mensagem; ?>
+            </div>
+            <?php $this->content(); ?>
+            <hr>
+            <footer>
+                <p class="small">Governo Municipal de Caucaia - Secretaria de Finanças, Planejamento e Orçamento</p><p class="small">Telefone: (85)3011-0661 - Email: suporte@sefin.caucaia.ce.gov.br</p>
+            </footer>
+        </div>
+
+        <div id="erro"></div>
+    </body>
+</html>

@@ -1,0 +1,18 @@
+<div class="row">
+    <div class="col-md-12">
+        <h2> Erro interno</h2>
+        <span class="text-danger">Erro! Ocorreu um erro interno no servidor.</span>
+        <p>Isso pode significar que o servidor não está funcionando corretamente.</p>
+        <p>Entre em contato com o suporte do site.</p>
+    </div>
+
+    <?php
+    ini_set('display_errors', 1);
+    ini_set('log_errors', 1);
+    ini_set('error_log', '/home/gilmario/error_log.txt');
+    error_reporting(E_ALL);
+    echo $this->view->ex;
+    ?>
+</div>
+
+

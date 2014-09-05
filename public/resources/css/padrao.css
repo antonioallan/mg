@@ -1,0 +1,66 @@
+/*
+    Created on : 05/11/2013, 10:18:15
+    Author     : gilmario
+*/
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.font_cabecalho{
+    font-weight:  bolder;
+}
+
+#cabecalho{
+    text-align: center;
+    height: 100px;
+    width: 900px;
+    border: 1px solid red;
+}
+
+
+#conteudo{
+    width: 900px;
+    min-height: 400px;
+}
+
+#rodape{
+    height: 50px;
+    width: 900px;
+    border: 1px solid red;
+}
+
+.click{
+    cursor: pointer;
+}
+
+.bg-result {
+    background-color: #e0e0e0;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+
+@font-face {
+    font-family: "XX";
+    src : url('../fonts/42______.ttf') format('truetype');
+    font-family: "PlAGuEdEaTH";
+    src : url('../fonts/PlAGuEdEaTH.ttf') format('truetype');
+    font-family: "Walkway";
+    src : url('../fonts/Walkway Black RevOblique.ttf') format('truetype');
+}
+
+canvas{
+    border-radius: 3px;
+    margin-top: 5px;
+}
+
+.dinheiro_mask{
+    text-align: right;
+}
+.percentual_mask{
+    text-align: right;
+}

@@ -1,0 +1,32 @@
+{
+    "filtro": [
+        {
+            "regra": {
+                "anotationClass": "secured",
+                "anotationMethod": "secured"
+            },
+            "classe": "\\App\\Controllers\\SecurityController"
+        },
+        {
+            "regra": {
+                "anotationClass": "secured",
+                "anotationMethod": "secured"
+            },
+            "classe": "\\App\\Filtros\\TempoSessaoFiltro"
+        },
+        {
+            "regra": {
+                "anotationClass": "",
+                "anotationMethod": "tentativa"
+            },
+            "classe": "\\App\\Filtros\\TentativaLoginFiltro"
+        },
+        {
+            "regra": {
+                "anotationClass": "aliquota",
+                "anotationMethod": "aliquota"
+            },
+            "classe": "\\App\\Filtros\\AliquotaSNFiltro"
+        }
+    ]
+}

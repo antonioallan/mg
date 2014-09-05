@@ -1,0 +1,19 @@
+{
+    "sistema": {
+        "tempoSessao": "900",
+        "diretorioRaiz": "/mg",
+        "varGlobais": [
+            {
+                "nome": "security",
+                "use": "jaspion\\Util\\Security\\Security"
+            }
+        ],
+        "baseController": {
+            "classe": "\\App\\Controllers\\InicioController",
+            "index": "inicioAction",
+            "erro404": "erro404",
+            "erro400": "erro400",
+            "erro500": "erro500"
+        }
+    }
+}

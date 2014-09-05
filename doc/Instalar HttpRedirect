@@ -1,0 +1,20 @@
+Instalar HttpRedirect
+Executar os comandos
+	apt-get install libcurl3-openssl-dev
+	pecl install pecl_http-1.7.6
+	
+Editar o arquivo 
+	/etc/php5/apache2/php.ini
+Adicionar as seguintes linhas
+	extension=raphf.so
+	extension=propro.so
+	extension=http.so
+
+Reiniciar o apache e só
+	
+
+
+
+
+
+

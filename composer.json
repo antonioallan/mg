@@ -1,0 +1,32 @@
+{
+    "name": "site_sefin",
+    "require": {
+        "php": ">=5.3"
+    },
+    "minimum-stability": "alpha",
+    "authors": [
+        {
+            "name": "Antonio Allan",
+            "email": "antonioallan.santos@gmail.com"
+        }
+    ],
+    "config": {
+        "bin-dir": "bin"
+    },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/gilmario-kpslow/jaspion.git"
+        }
+    ],
+    "require": {
+        "jaspion": "dev-master"
+    }
+    ,
+    "autoload": {
+        "psr-0": {
+            "jaspion\\": "/",
+            "App" : "./"
+        }
+    }
+}

@@ -1,0 +1,20 @@
+{
+    "mensagem": {
+        "idioma": "pt_BR",
+        "mensagens": {
+            "alteraSenha": "Senha alterada com sucesso",
+            "erroAlteraSenha": "A sua senha atual não confere com a informada!",
+            "erroLogin": "Usuário ou senha incorretos.",
+            "solcadastro": "Sua Solicitação foi enviada com sucesso! Um email de ativação foi enviado para você.",
+            "dadosAtualizados": "Seus dados foram atualizados.",
+            "emailAtivado": "Seu email foi ativado com sucesso. Logo você receberá uma senha por email.",
+            "erroAtivaEmail": "Esse email já está ativado ou o cadastro não existe.",
+            "inscricaoCreditada": "Inscrição creditada com sucesso!",
+            "erroCreditarNota": "Não foi possível creditar essa inscrição.",
+            "fimSessao": "Sua sessão foi encerrada.",
+            "avisoBloqueio": "Sua senha será bloqueda se você errar novamente.",
+            "senhaBloqueio": "Sua senha foi bloqueda por excesso de tentativas."
+        }
+    }
+
+}
